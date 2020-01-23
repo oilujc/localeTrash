@@ -1,5 +1,7 @@
 {
   "name": "localetrash",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

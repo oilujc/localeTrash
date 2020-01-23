@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>login</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="loginForm" (submit)="onSubmit()">
+        <ion-item>
+            <ion-label>username</ion-label>
+            <ion-input type="text" formControlName="username"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>password</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <ion-button expand="block" type="submit" [disabled]="!loginForm.valid">Iniciar sesión</ion-button>
+    </form>
+</ion-content>
